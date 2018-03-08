@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+    <h2 class="w3-center">Contact Us</h2>
+
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+        <div class="w3-rest">
+            <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+        </div>
+    </div>
+
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+        <div class="w3-rest">
+            <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+        </div>
+    </div>
+
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+        <div class="w3-rest">
+            <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+        </div>
+    </div>
+
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+            <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+        </div>
+    </div>
+
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+        <div class="w3-rest">
+            <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+        </div>
+    </div>
+
+    <p class="w3-center">
+        <button class="w3-button w3-section w3-blue w3-ripple"> Send </button>
+    </p>
+</form>
+<span style="cursor:auto">auto</span><br>
+<span style="cursor:crosshair">crosshair</span><br>
+<span style="cursor:default">default</span><br>
+<span style="cursor:e-resize">e-resize</span><br>
+<span style="cursor:help">help</span><br>
+<span style="cursor:move">move</span><br>
+<span style="cursor:n-resize">n-resize</span><br>
+<span style="cursor:ne-resize">ne-resize</span><br>
+<span style="cursor:nw-resize">nw-resize</span><br>
+<span style="cursor:pointer">pointer</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">s-resize</span><br>
+<span style="cursor:se-resize">se-resize</span><br>
+<span style="cursor:sw-resize">sw-resize</span><br>
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
+
+<p><b>Note:</b> The "border-left-width" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+<div class="case1">
+    <h2>Floating boxes</h2>
+    <whatever>
+        <div class="box1">
+            Box 1!
+        </div>
+        <div class="box2">
+            Box 2!
+        </div>
+    </whatever>
+</div>
+<div class="case2">
+    <h2>Non-floating boxes</h2>
+    <whatever>
+        <div class="box1">
+            Box 1!
+        </div>
+        <div class="box2">
+            Box 2!
+        </div>
+    </whatever>
+</div>
+<div class="case3">
+    <h2>Floating &amp; cleared boxes</h2>
+    <whatever>
+        <div class="box1">
+            Box 1!
+        </div>
+        <div class="box2">
+            Box 2!
+        </div>
+    </whatever>
+</div>
+
+</body>
+
+<style>
+    p {
+        border-style: solid;
+        border-left-width: 15px;
+    }
+
+    /* Rules for all cases */
+
+    .box1, .box2 {
+        border: 1px solid;
+        padding: 1em;
+    }
+
+    .box1 {
+        color: red;
+    }
+
+    .box2 {
+        color: green;
+    }
+
+    /* Rules for case 1 */
+
+    .case1 .box1 {
+        float: left;
+    }
+
+    .case1 .box2 {
+        float: right;
+    }
+
+    /* No rules for case 2 */
+
+    /* Rules for case 3 */
+
+    .case3 .box1 {
+        float: left;
+    }
+
+    .case3 .box2 {
+        float: right;
+        clear: both;
+    }
+    /* Ignore this stuff, just presents the example better */
+
+    hgroup {
+        clear: both;
+    }
+
+    whatever {
+        background: #eee;
+        display: block;
+        overflow: hidden;
+    }
+
+
+
+</style>
+</html>
